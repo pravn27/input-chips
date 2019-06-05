@@ -1,0 +1,108 @@
+/* Common styles */
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainContainer h1{
+  text-align: center;
+}
+
+/* For user input selection - start */
+.inputContainer{
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.inputContainer input{
+  width: 100%;
+  height: 45px;
+  font-size: 18px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #35424a;
+  background-color: #f4f4f4;
+  border-bottom-width: 2px;
+}
+
+.inputContainer input:focus{
+  outline: none;
+}
+
+.autoSuggestContainer{
+  width: 60%;
+  border: 2px solid lightgrey;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, .7);
+}
+
+.autoSuggestContainer img{
+  border-radius: 50%;
+}
+
+.autoSuggestContainer ul{
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.autoSuggestContainer ul li{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 0 10px 15px;
+}
+
+.autoSuggestContainer li .languageName{
+  margin: 0 10px;
+}
+
+.autoSuggestContainer li .email{
+  font-size: 12px;
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+.autoSuggestContainer li:hover{
+  background: darkgrey;
+}
+
+.userSelectedContainer{
+  position: absolute;
+  top: 3px;
+  left: 1px;
+  display: inline-flex;
+}
+
+.userSelectedContainer .inputItemSelected{
+  width: 165px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  background: darkgrey;
+  border-radius: 20px;
+}
+
+.userSelectedContainer .inputItemSelected img{
+  border-radius: 50%;
+}
+
+.userSelectedContainer .inputItemSelected span{
+  margin: 0 10px;
+  width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userSelectedContainer .inputItemSelected .deleteBtn{
+  cursor: pointer;
+}
+.userSelectedContainer .inputItemSelected .deleteBtn:hover{
+  color: red;
+}
+
+/* For user input selection - end */
